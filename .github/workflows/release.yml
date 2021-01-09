@@ -14,6 +14,7 @@ jobs:
         with:
           fetch-depth: '0'
       - name: mkdir temp
+        run: mkdir temp/
       - name: zip Release
         run: zip -x '*.git*' -x 'temp/' -r temp/release.zip .
       - name: tgz Release
