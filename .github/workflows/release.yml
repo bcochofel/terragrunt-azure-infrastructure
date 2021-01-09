@@ -13,10 +13,11 @@ jobs:
         uses: actions/checkout@v2
         with:
           fetch-depth: '0'
+      - name: mkdir temp
       - name: zip Release
-        run: zip -x '*.git*' -r release.zip .
+        run: zip -x '*.git*' -x 'temp/' -r temp/release.zip .
       - name: tgz Release
-        run: tar --exclude '*.git*' -zcf release.tar.gz .
+        run: tar --exclude '*.git*' --exclude 'temp/' -zcf temp/release.tar.gz .
       - name: Extract owner and repo
         uses: jungwinter/split@v1
         id: repo
@@ -46,8 +47,8 @@ jobs:
           milestone: ${{ steps.gitversion.outputs.majorMinorPatch }}
           name: 'Release ${{ steps.gitversion.outputs.majorMinorPatch }}'
           assets:  |
-            release.zip
-            release.tar.gz
+            temp/release.zip
+            temp/release.tar.gz
       - name: Publish release with GitReleaseManager
         uses: gittools/actions/gitreleasemanager/publish@v0.9.2
         with:
