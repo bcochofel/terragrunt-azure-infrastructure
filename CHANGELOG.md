@@ -2,9 +2,6 @@
 ## [Unreleased]
 
 
-<a name="v1.1.0-6744537"></a>
-## [v1.1.0-6744537] - 2021-01-10
-
 <a name="v1.0.0"></a>
 ## v1.0.0 - 2021-01-10
 ### Pull Requests
@@ -21,7 +18,3 @@
 - Merge pull request [#3](https://github.com/bcochofel/terragrunt-azure-infrastructure/issues/3) from bcochofel/github-release
 - Merge pull request [#2](https://github.com/bcochofel/terragrunt-azure-infrastructure/issues/2) from bcochofel/fix-github
 - Merge pull request [#1](https://github.com/bcochofel/terragrunt-azure-infrastructure/issues/1) from bcochofel/first-commit
-
-
-[Unreleased]: https://github.com/bcochofel/terragrunt-azure-infrastructure/compare/v1.1.0-6744537...HEAD
-[v1.1.0-6744537]: https://github.com/bcochofel/terragrunt-azure-infrastructure/compare/v1.0.0...v1.1.0-6744537
