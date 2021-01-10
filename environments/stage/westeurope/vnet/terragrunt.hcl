@@ -25,10 +25,6 @@ include {
 inputs = {
   rg_name = "rg-base-${local.env}-${local.location_shortname}-001"
 
-  custom_tags = {
-    Environment = "${local.env}"
-  }
-
   ddos_protection_plan_name = "ddospp-base-${local.env}-${local.location_shortname}-001"
   vnet_name                 = "vnet-base-${local.env}-${local.location_shortname}-001"
   address_space             = "${local.address_space}"
