@@ -10,7 +10,7 @@ locals {
   location           = local.region_vars.locals.location
   location_shortname = local.region_vars.locals.location_shortname
 
-  address_space = local.environment_vars.locals.vnet[local.location].address_space
+  address_space = local.environment_vars.locals.vnet[local.location].vnet_cidr
 }
 
 terraform {

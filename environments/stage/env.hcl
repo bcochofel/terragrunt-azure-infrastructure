@@ -6,10 +6,10 @@ locals {
 
   vnet = {
     northeurope = {
-      address_space = "10.0.0.0/16"
+      vnet_cidr = "10.0.0.0/16"
     }
     westeurope = {
-      address_space = "10.1.0.0/16"
+      vnet_cidr = "10.1.0.0/16"
     }
   }
 }
