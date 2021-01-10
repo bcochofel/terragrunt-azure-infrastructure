@@ -45,7 +45,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           owner: ${{ steps.repo.outputs._0 }}
           repository: ${{ steps.repo.outputs._1 }}
-          milestone: ${{ steps.gitversion.outputs.majorMinorPatch }}
+#          milestone: ${{ steps.gitversion.outputs.majorMinorPatch }}
           name: 'Release ${{ steps.gitversion.outputs.majorMinorPatch }}'
           assets:  |
             temp/release.zip
@@ -63,4 +63,4 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           owner: ${{ steps.repo.outputs._0 }}
           repository: ${{ steps.repo.outputs._1 }}
-          milestone: ${{ steps.gitversion.outputs.majorMinorPatch }}
+#          milestone: ${{ steps.gitversion.outputs.majorMinorPatch }}
