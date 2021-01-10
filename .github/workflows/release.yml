@@ -19,6 +19,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           WITH_V: true
+          RELEASE_BRANCHES: main,master
       - name: Changelog
         id: changelog
         uses: nuuday/github-changelog-action@v1.0.0
