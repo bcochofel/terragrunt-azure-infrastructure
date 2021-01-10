@@ -2,7 +2,7 @@ name: Release
 on:
   push:
     branches:
-      - main
+      - '*'
 
 jobs:
   release:
@@ -31,31 +31,32 @@ jobs:
       - name: Display GitVersion outputs
         run: |
           echo "MajorMinorPatch: ${{ steps.gitversion.outputs.majorMinorPatch }}"
-      - name: Install GitReleaseManager
-        uses: gittools/actions/gitreleasemanager/setup@v0.9.8
-        with:
-          versionSpec: '0.11.x'
-      - name: Create release with GitReleaseManager
-        uses: gittools/actions/gitreleasemanager/create@v0.9.8
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          owner: ${{ steps.repo.outputs._0 }}
-          repository: ${{ steps.repo.outputs._1 }}
+#      - name: Install GitReleaseManager
+#        uses: gittools/actions/gitreleasemanager/setup@v0.9.8
+#        with:
+#          versionSpec: '0.11.x'
+#      - name: Create release with GitReleaseManager
+#        uses: gittools/actions/gitreleasemanager/create@v0.9.8
+#        with:
+#          token: ${{ secrets.GITHUB_TOKEN }}
+#          owner: ${{ steps.repo.outputs._0 }}
+#          repository: ${{ steps.repo.outputs._1 }}
 #          milestone: ${{ steps.gitversion.outputs.majorMinorPatch }}
-          name: 'Release ${{ steps.gitversion.outputs.majorMinorPatch }}'
-          assets:  |
-            release.zip
-      - name: Publish release with GitReleaseManager
-        uses: gittools/actions/gitreleasemanager/publish@v0.9.8
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          owner: ${{ steps.repo.outputs._0 }}
-          repository: ${{ steps.repo.outputs._1 }}
-          tagName: ${{ steps.gitversion.outputs.majorMinorPatch }}
-      - name: Close release with GitReleaseManager
-        uses: gittools/actions/gitreleasemanager/close@v0.9.8
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          owner: ${{ steps.repo.outputs._0 }}
-          repository: ${{ steps.repo.outputs._1 }}
+#          name: 'Release ${{ steps.gitversion.outputs.majorMinorPatch }}'
+#          assets:  |
+#            release.zip
+#      - name: Publish release with GitReleaseManager
+#        uses: gittools/actions/gitreleasemanager/publish@v0.9.8
+#        with:
+#          token: ${{ secrets.GITHUB_TOKEN }}
+#          owner: ${{ steps.repo.outputs._0 }}
+#          repository: ${{ steps.repo.outputs._1 }}
+#          tagName: ${{ steps.gitversion.outputs.majorMinorPatch }}
+#      - name: Close release with GitReleaseManager
+#        uses: gittools/actions/gitreleasemanager/close@v0.9.8
+#        with:
+#          token: ${{ secrets.GITHUB_TOKEN }}
+#          owner: ${{ steps.repo.outputs._0 }}
+#          repository: ${{ steps.repo.outputs._1 }}
 #          milestone: ${{ steps.gitversion.outputs.majorMinorPatch }}
+#

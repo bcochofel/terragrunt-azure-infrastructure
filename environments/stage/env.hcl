@@ -12,4 +12,9 @@ locals {
       vnet_cidr = "10.1.0.0/16"
     }
   }
+
+  custom_tags = {
+    Environment = "${local.environment}"
+    ManagedBy   = "terraform"
+  }
 }
