@@ -5,6 +5,7 @@
 <a name="1.1.1"></a>
 ## [1.1.1] - 2021-01-11
 ### Pull Requests
+- Merge pull request [#16](https://github.com/bcochofel/terragrunt-azure-infrastructure/issues/16) from bcochofel/fix-workflow
 - Merge pull request [#15](https://github.com/bcochofel/terragrunt-azure-infrastructure/issues/15) from bcochofel:gitversion
 
 
