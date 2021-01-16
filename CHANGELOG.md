@@ -2,6 +2,12 @@
 ## [Unreleased]
 
 
+<a name="2.0.0"></a>
+## [2.0.0] - 2021-01-16
+### Chore
+- skeleton for repo
+
+
 <a name="0.1.0"></a>
 ## 0.1.0 - 2021-01-11
 ### Pull Requests
@@ -24,4 +30,5 @@
 - Merge pull request [#1](https://github.com/bcochofel/terragrunt-azure-infrastructure/issues/1) from bcochofel/first-commit
 
 
-[Unreleased]: https://github.com/bcochofel/terragrunt-azure-infrastructure/compare/0.1.0...HEAD
+[Unreleased]: https://github.com/bcochofel/terragrunt-azure-infrastructure/compare/2.0.0...HEAD
+[2.0.0]: https://github.com/bcochofel/terragrunt-azure-infrastructure/compare/0.1.0...2.0.0
