@@ -35,6 +35,7 @@ jobs:
         with:
           tag_name: ${{ steps.gitversion.outputs.majorMinorPatch }}
           release_name: Release ${{ steps.gitversion.outputs.majorMinorPatch }}
-          body: ""
+          body: |
+            [CHANGELOG](./CHANGELOG.md)
           draft: false
           prerelease: false
