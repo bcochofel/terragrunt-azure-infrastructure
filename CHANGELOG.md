@@ -2,6 +2,15 @@
 ## [Unreleased]
 
 
+<a name="0.2.1"></a>
+## [0.2.1] - 2021-01-16
+### Feat
+- azure pipelines
+
+### Pull Requests
+- Merge pull request [#19](https://github.com/bcochofel/terragrunt-azure-infrastructure/issues/19) from bcochofel/azure-pipelines
+
+
 <a name="0.2.0"></a>
 ## [0.2.0] - 2021-01-16
 ### Chore
@@ -36,5 +45,6 @@
 - Merge pull request [#1](https://github.com/bcochofel/terragrunt-azure-infrastructure/issues/1) from bcochofel/first-commit
 
 
-[Unreleased]: https://github.com/bcochofel/terragrunt-azure-infrastructure/compare/0.2.0...HEAD
+[Unreleased]: https://github.com/bcochofel/terragrunt-azure-infrastructure/compare/0.2.1...HEAD
+[0.2.1]: https://github.com/bcochofel/terragrunt-azure-infrastructure/compare/0.2.0...0.2.1
 [0.2.0]: https://github.com/bcochofel/terragrunt-azure-infrastructure/compare/0.1.0...0.2.0
