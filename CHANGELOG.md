@@ -2,10 +2,16 @@
 ## [Unreleased]
 
 
-<a name="2.0.0"></a>
-## [2.0.0] - 2021-01-16
+<a name="0.2.0"></a>
+## [0.2.0] - 2021-01-16
 ### Chore
 - skeleton for repo
+
+### Feat
+- add bastion code
+
+### Pull Requests
+- Merge pull request [#18](https://github.com/bcochofel/terragrunt-azure-infrastructure/issues/18) from bcochofel/minor-refactor
 
 
 <a name="0.1.0"></a>
@@ -30,5 +36,5 @@
 - Merge pull request [#1](https://github.com/bcochofel/terragrunt-azure-infrastructure/issues/1) from bcochofel/first-commit
 
 
-[Unreleased]: https://github.com/bcochofel/terragrunt-azure-infrastructure/compare/2.0.0...HEAD
-[2.0.0]: https://github.com/bcochofel/terragrunt-azure-infrastructure/compare/0.1.0...2.0.0
+[Unreleased]: https://github.com/bcochofel/terragrunt-azure-infrastructure/compare/0.2.0...HEAD
+[0.2.0]: https://github.com/bcochofel/terragrunt-azure-infrastructure/compare/0.1.0...0.2.0
