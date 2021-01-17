@@ -66,7 +66,7 @@ terraform {
 
   after_hook "debug" {
     commands = ["plan"]
-    execute  = ["tf_compliance.sh", "plan.tfplan"]
+    execute  = ["tf_compliance.sh", "plan.tfplan", "/opt/projects/bcochofel/terraform-compliance/opa/"]
   }
 }
 
