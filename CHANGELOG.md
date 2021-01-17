@@ -2,6 +2,12 @@
 ## [Unreleased]
 
 
+<a name="0.2.3"></a>
+## [0.2.3] - 2021-01-17
+### Fix
+- tf_compliance hook args
+
+
 <a name="0.2.2"></a>
 ## [0.2.2] - 2021-01-17
 ### Feat
@@ -51,7 +57,8 @@
 - Merge pull request [#1](https://github.com/bcochofel/terragrunt-azure-infrastructure/issues/1) from bcochofel/first-commit
 
 
-[Unreleased]: https://github.com/bcochofel/terragrunt-azure-infrastructure/compare/0.2.2...HEAD
+[Unreleased]: https://github.com/bcochofel/terragrunt-azure-infrastructure/compare/0.2.3...HEAD
+[0.2.3]: https://github.com/bcochofel/terragrunt-azure-infrastructure/compare/0.2.2...0.2.3
 [0.2.2]: https://github.com/bcochofel/terragrunt-azure-infrastructure/compare/0.2.1...0.2.2
 [0.2.1]: https://github.com/bcochofel/terragrunt-azure-infrastructure/compare/0.2.0...0.2.1
 [0.2.0]: https://github.com/bcochofel/terragrunt-azure-infrastructure/compare/0.1.0...0.2.0
