@@ -14,7 +14,7 @@ locals {
 }
 
 terraform {
-  source = "github.com/bcochofel/terraform-azurerm-modules//modules/bastion_vm?ref=v1.5.0"
+  source = "github.com/bcochofel/terraform-azurerm-modules//modules/bastion_vm"
 }
 
 # Include all settings from the root terragrunt.hcl file

@@ -31,9 +31,27 @@ remote_state {
 }
 
 terraform {
-  before_hook "env" {
-    commands = ["validate", "plan"]
-    execute  = ["env"]
+  extra_arguments "plan_vars" {
+    commands = [
+      "plan",
+    ]
+
+    arguments = [
+      "-out",
+      "plan.tfplan",
+    ]
+  }
+
+  extra_arguments "apply_vars" {
+    commands = [
+      "apply",
+    ]
+
+    arguments = [
+      "-auto-approve",
+      "-input=false",
+      "plan.tfplan",
+    ]
   }
 
   after_hook "tflint" {
@@ -41,9 +59,14 @@ terraform {
     execute  = ["tflint", "--module", "."]
   }
 
-  after_hook "conftest" {
-    commands = ["show"]
-    execute  = ["conftest", "--version"]
+  #  after_hook "show" {
+  #    commands = ["plan"]
+  #    execute  = ["terraform", "show", "-no-color", "-json", "plan.tfplan"]
+  #  }
+
+  after_hook "debug" {
+    commands = ["plan"]
+    execute  = ["tf_compliance.sh", "plan.tfplan"]
   }
 }
 

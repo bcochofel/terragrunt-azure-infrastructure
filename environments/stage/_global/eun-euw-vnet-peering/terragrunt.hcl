@@ -12,7 +12,7 @@ locals {
 }
 
 terraform {
-  source = "github.com/bcochofel/terraform-azurerm-modules//modules/vnet_peering?ref=v1.5.0"
+  source = "github.com/bcochofel/terraform-azurerm-modules//modules/vnet_peering"
 }
 
 # Include all settings from the root terragrunt.hcl file

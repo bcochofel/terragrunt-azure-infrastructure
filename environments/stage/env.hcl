@@ -18,5 +18,6 @@ locals {
   custom_tags = {
     Environment = "${local.environment}"
     ManagedBy   = "terraform"
+    Project     = "DemoLab"
   }
 }
