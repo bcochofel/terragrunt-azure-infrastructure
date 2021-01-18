@@ -1,43 +1,14 @@
 # terragrunt-azure-infrastructure
 
-[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
-[![GitHub license](https://img.shields.io/github/license/bcochofel/terragrunt-azure-infrastructure.svg)](https://github.com/bcochofel/terragrunt-azure-infrastructure/blob/master/LICENSE)
-[![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/bcochofel/terragrunt-azure-infrastructure)](https://github.com/bcochofel/terragrunt-azure-infrastructure/tags)
-[![GitHub issues](https://img.shields.io/github/issues/bcochofel/terragrunt-azure-infrastructure.svg)](https://github.com/bcochofel/terragrunt-azure-infrastructure/issues/)
-[![GitHub forks](https://img.shields.io/github/forks/bcochofel/terragrunt-azure-infrastructure.svg?style=social&label=Fork&maxAge=2592000)](https://github.com/bcochofel/terragrunt-azure-infrastructure/network/)
-[![GitHub stars](https://img.shields.io/github/stars/bcochofel/terragrunt-azure-infrastructure.svg?style=social&label=Star&maxAge=2592000)](https://github.com/bcochofel/terragrunt-azure-infrastructure/stargazers/)
-
-Deploy Azure Infrastructure with Terraform/Terragrunt
+[![pre-commit badge][pre-commit-badge]][pre-commit] [![Conventional commits badge][conventional-commits-badge]][conventional-commits] [![Keep a Changelog v1.1.0 badge][keep-a-changelog-badge]][keep-a-changelog] [![MIT License Badge][license-badge]][license]
 
 # pre-commit hooks
 
-This repo can be configure to use `pre-commit` hooks.
+Read the [pre-commit hooks](docs/pre-commit-hooks.md) document for more info.
 
-After [installing `pre-commit`](https://pre-commit.com/#install) just execute:
+# git-chglog
 
-```bash
-pre-commit install
-```
-
-You can run specific hooks on all files:
-
-```bash
-pre-commit run terragrunt-hclfmt -a
-```
-
-or you can run all the hooks:
-
-```bash
-pre-commit run -a
-```
-
-## pre-commit hooks dependencies
-
-To run the hooks configured for this repository you need:
-
-* [`pre-commit`](https://pre-commit.com/#install)
-* [`TFLint`](https://github.com/terraform-linters/tflint)
-* [`terraform-docs`](https://github.com/terraform-docs/terraform-docs)
+Read the [git-chglog](docs/git-chlog.md) document for more info.
 
 # References
 
@@ -53,3 +24,14 @@ To run the hooks configured for this repository you need:
 * [Azure Define your naming convention](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming)
 * [Azure Recommended abbreviations for Azure resource types](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations)
 * [Terraform Versions Constraints](https://www.terraform.io/docs/configuration/version-constraints.html)
+
+[pre-commit]: https://github.com/pre-commit/pre-commit
+[pre-commit-badge]: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
+[conventional-commits-badge]: https://img.shields.io/badge/Conventional%20Commits-1.0.0-green.svg
+[conventional-commits]: https://conventionalcommits.org
+[keep-a-changelog-badge]: https://img.shields.io/badge/changelog-Keep%20a%20Changelog%20v1.1.0-%23E05735
+[keep-a-changelog]: https://keepachangelog.com/en/1.0.0/
+[license]: ./LICENSE
+[license-badge]: https://img.shields.io/badge/license-MIT-green.svg
+[changelog]: ./CHANGELOG.md
+[changelog-badge]: https://img.shields.io/badge/changelog-Keep%20a%20Changelog%20v1.1.0-%23E05735

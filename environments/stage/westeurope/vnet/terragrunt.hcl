@@ -10,11 +10,11 @@ locals {
   location           = local.region_vars.locals.location
   location_shortname = local.region_vars.locals.location_shortname
 
-  address_space = local.environment_vars.locals.vnet[local.location].vnet_cidr
+  vnet_cidr = local.environment_vars.locals.network[local.location].vnet_cidr
 }
 
 terraform {
-  source = "github.com/bcochofel/terraform-azurerm-modules//modules/vnet?ref=v1.5.0"
+  source = "github.com/bcochofel/terraform-azurerm-modules//modules/vnet"
 }
 
 # Include all settings from the root terragrunt.hcl file
@@ -27,5 +27,5 @@ inputs = {
 
   ddos_protection_plan_name = "ddospp-base-${local.env}-${local.location_shortname}-001"
   vnet_name                 = "vnet-base-${local.env}-${local.location_shortname}-001"
-  address_space             = "${local.address_space}"
+  address_space             = "${local.vnet_cidr}"
 }
