@@ -41,10 +41,6 @@ dependency "vnet" {
 inputs = {
   rg_name = "rg-bastion-${local.env}-${local.location_shortname}-001"
 
-  custom_tags = {
-    Environment = "${local.env}"
-  }
-
   vnet_name = dependency.vnet.outputs.vnet_name
   vnet_rg   = dependency.vnet.outputs.rg_name
 
