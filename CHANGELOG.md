@@ -5,6 +5,7 @@
 <a name="0.2.5"></a>
 ## [0.2.5] - 2021-01-23
 ### Fix
+- gh workflow
 - resource tags
 
 
