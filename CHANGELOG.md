@@ -2,10 +2,19 @@
 ## [Unreleased]
 
 
-<a name="0.3.0"></a>
-## [0.3.0] - 2021-01-18
+<a name="0.2.5"></a>
+## [0.2.5] - 2021-01-23
+### Fix
+- resource tags
+
+
+<a name="0.2.4"></a>
+## [0.2.4] - 2021-01-18
 ### Fix
 - github workflows
+
+### Pull Requests
+- Merge pull request [#20](https://github.com/bcochofel/terragrunt-azure-infrastructure/issues/20) from bcochofel/gh-workflow
 
 
 <a name="0.2.3"></a>
@@ -63,8 +72,9 @@
 - Merge pull request [#1](https://github.com/bcochofel/terragrunt-azure-infrastructure/issues/1) from bcochofel/first-commit
 
 
-[Unreleased]: https://github.com/bcochofel/terragrunt-azure-infrastructure/compare/0.3.0...HEAD
-[0.3.0]: https://github.com/bcochofel/terragrunt-azure-infrastructure/compare/0.2.3...0.3.0
+[Unreleased]: https://github.com/bcochofel/terragrunt-azure-infrastructure/compare/0.2.5...HEAD
+[0.2.5]: https://github.com/bcochofel/terragrunt-azure-infrastructure/compare/0.2.4...0.2.5
+[0.2.4]: https://github.com/bcochofel/terragrunt-azure-infrastructure/compare/0.2.3...0.2.4
 [0.2.3]: https://github.com/bcochofel/terragrunt-azure-infrastructure/compare/0.2.2...0.2.3
 [0.2.2]: https://github.com/bcochofel/terragrunt-azure-infrastructure/compare/0.2.1...0.2.2
 [0.2.1]: https://github.com/bcochofel/terragrunt-azure-infrastructure/compare/0.2.0...0.2.1
